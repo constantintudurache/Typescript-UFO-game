@@ -1,0 +1,28 @@
+#gameover {
+  border-radius: 0.5vmax;
+  background-color: #eac274;
+  text-align: center;
+  font-size: 3vmin;
+  color: rgb(74, 121, 192);
+  width: 50vw;
+  height: fit-content;
+  margin: auto;
+  margin-top: 30vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+button {
+  background-color: rgb(74, 121, 192);
+  border-radius: 0.4vmax;
+  width: 12vw;
+  height: 6vh;
+  border: 0.2vmax solid rgb(48, 89, 152);
+  text-align: center;
+  color: white;
+  margin-bottom: 1vh;
+}
+
+button:hover {
+  background-color: rgb(58, 111, 192);
+}

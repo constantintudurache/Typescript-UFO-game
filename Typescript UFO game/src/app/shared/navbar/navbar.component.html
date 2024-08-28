@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
+  <link rel="stylesheet" href="./navbar.component.css" />
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-content">
+    <div class="navbar-item1">
+      <img src="../assets/Pictures/upm-logo.png" alt="Attachment not found" />
+    </div>
+    <div class="navbar-item4">
+      U.P.M UFO Battle
+    </div>
+    <div class="navbar-item2">
+      <a routerLink="home" routerLinkActive="active">Home </a>
+      <a routerLink="preferences" routerLinkActive="active">Preferences </a>
+      <a routerLink="play" routerLinkActive="active">Play </a>
+      <a routerLink="records" routerLinkActive="active">Records</a>
+    </div>
+
+    <div class="navbar-item3">
+      <a routerLink="register" routerLinkActive="active">Register </a>
+      <a routerLink="login" routerLinkActive="active" id="login" *ngIf="!logged">Login</a>
+      <a routerLink="home" routerLinkActive="active" id="logout" *ngIf="logged" (click)="logout()">Logout</a>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

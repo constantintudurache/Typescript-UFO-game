@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preferences</title>
+  <link rel="stylesheet" href="./preferences.component.css" />
+</head>
+<body>
+
+
+<div class="container">
+  <fieldset>
+    <legend>
+      <img src="../assets/Pictures/logo-3.png" alt="">
+      <p>Preferences</p>
+    </legend>
+    <div class="form-content">
+
+      <label for="UFONumber">Number of UFO's:</label>
+      <input type="number" id="UFONumber" min="1" max="5" step="1" value="{{UFOs}}" [(ngModel)]="UFOs">
+
+
+      <br /><br />
+      <label for="Time">Time (Seconds) :</label>
+<!--      <select name="Time" id="Time" [(ngModel)]="time">-->
+<!--&lt;!&ndash;        <option value = "default" *ngIf="saved">{{time}}</option>&ndash;&gt;-->
+<!--        <option value="60" selected>60</option>-->
+<!--        <option value="120">120</option>-->
+<!--        <option value="180">180</option>-->
+<!--      </select>-->
+      <input type="number" id="Time" min="60" max="180" step="60" value="{{time}}" [(ngModel)]="time">
+      <br /><br />
+
+      <button type='button' id = "Accept" (click) = "save(UFOs, time)">Accept</button>
+    </div>
+
+  </fieldset>
+</div>
+<script src="../scripts/preferences.js"></script>
+</body>
+</html>

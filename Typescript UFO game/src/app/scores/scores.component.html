@@ -1,0 +1,22 @@
+<table class="ranking">
+    <tr id="header">
+      <td></td>
+      <td></td>
+      <td>User </td>
+      <td>Points </td>
+      <td>UFOs </td>
+      <td>Secs </td>
+      <td>Date </td>
+    </tr>
+    <tr class="row" *ngFor="let score of scoresList; let i = index">
+      <td>
+        {{i + 1}}
+      </td>
+      <td>{{score.username}} </td>
+      <td>{{score.punctuation}} </td>
+      <td>{{score.ufos}}</td>
+      <td>{{score.disposedTime}}</td>
+      <td>{{score.recordDate | date:"dd/MM/yy"}} </td>
+    </tr>
+</table>
+

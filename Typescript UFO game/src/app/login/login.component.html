@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./login.component.css" />
+</head>
+<body>
+
+<div class="container">
+  <fieldset>
+    <legend>
+      <img src="../assets/Pictures/logo-3.png" alt="" />
+      <p>User identification</p>
+    </legend>
+    <div class="form-content">
+      User:
+      <input type="text" id="user" placeholder="User identifier" [(ngModel)]="username" />
+      <br /><br />
+      Password:
+      <input type="password" id="password" required placeholder="Password" [(ngModel)]="password"/>
+      <br /><br />
+      <button type="button" id = "button" (click) = "doLogin()">Login</button>
+    </div>
+  </fieldset>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,83 @@
+
+
+a {
+  text-decoration: none;
+  color: rgb(74, 121, 192);
+}
+
+button {
+  background-color: rgb(74, 121, 192);
+  border-radius: 0.4vmax;
+  width: 5vw;
+  height: 6vh;
+  border: 0.2vmax solid rgb(48, 89, 152);
+  text-align: center;
+  color: white;
+  margin-bottom: 1vh;
+}
+
+button:hover {
+  background-color: rgb(58, 111, 192);
+}
+
+fieldset {
+  text-align: center;
+  border-bottom: rgb(27, 58, 105) solid  0.4vmax;
+  border-right: rgb(27, 58, 105) solid  0.4vmax;
+  border-top: #e29c10 solid  0.4vmax;
+  border-left: #e29c10 solid  0.4vmax;
+  font-size: 1.5vmax;
+  width: 80%;
+  margin: auto;
+
+}
+
+legend {
+  margin-left: -12vmax;
+  height: 22vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #eac274;
+}
+
+legend img {
+  width: 9vw;
+  height: 10vh;
+  /* display: inline; */
+  margin-top: 5vh;
+}
+
+legend p {
+  width: fit-content;
+  height: 10vh;
+  text-align: center;
+  margin-top: 9vh;
+  font-size: 2vmax;
+  color: rgb(74, 121, 192);
+  font-weight: 500;
+}
+
+input {
+  border-radius: 0.4vmax;
+  width: 13vw;
+  height: 3vh;
+  text-align: left;
+  border: 0px;
+  padding: 0.2vmax;
+}
+
+.form-content {
+  width: 52.5%;
+  text-align: right;
+  font-weight: 600;
+}
+
+.container {
+  border-radius: 0.5vmax;
+  background-color: #eac274;
+  width: 70vw;
+  height: 57vh;
+  margin: auto;
+  margin-top: 15vh;
+}

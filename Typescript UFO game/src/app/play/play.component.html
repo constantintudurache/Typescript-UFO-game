@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFO GAME</title>
+  <link rel="stylesheet" href="./play.component.css" />
+  <script src="../scripts/play.js"></script>
+</head>
+<body>
+
+
+<div id="container">
+  <div id="score">Score</div>
+  <div id="time">Ready</div>
+
+<!--   <img src="../assets/Pictures/UFO-play.png" alt="image not found" *ngFor="let ufo of UFOs;let i = index" id="UFO{{i + 1}}" />-->
+  <img #missile src="../assets/Pictures/missile.png" alt="image not found" id="missile"  />
+<!--  <app-gameover></app-gameover>-->
+  <router-outlet></router-outlet>
+</div>
+
+
+</body>
+</html>
